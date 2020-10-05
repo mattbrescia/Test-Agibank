@@ -1,0 +1,9 @@
+version: '3.5'
+services:
+  agibank:
+    container_name: agibank
+    build:
+      context: ./agibank
+      dockerfile: Dockerfile
+    ports:
+      - "3333:3333"
